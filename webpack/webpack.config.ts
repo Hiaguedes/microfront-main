@@ -14,6 +14,7 @@ const config: Configuration = {
     },
     devServer: {
         port: 3000,
+        historyApiFallback: true,
     },
     module: {
         rules: [

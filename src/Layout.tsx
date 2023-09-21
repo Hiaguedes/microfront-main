@@ -6,7 +6,8 @@ const RemoteSidebar = React.lazy(() => import('sidebar/sidebar'!));
 type Routes = [{path: string, name: string, element: React.JSX.Element}]
 const Layout = ({children, routes}: { children: React.JSX.Element, routes: Routes }) => {
 
-    const itens = Array.isArray(routes) && routes && routes.map(route => (<Link to={'/'+ route.path}>{route.name}</Link>))
+    // const itens = Array.isArray(routes) && routes && routes.map(route => (<Link to={'/'+ route.path}>{route.name}</Link>))
+    const itens = Array.isArray(routes) && routes && routes.map(route => (<a href={'/'+ route.path}>{route.name}</a>))
 
     if(!routes) {
         return <p>Sem rotas</p>
@@ -34,7 +35,6 @@ const Layout = ({children, routes}: { children: React.JSX.Element, routes: Route
                 }}
                 >
                     {children}
-                    
             </div>
         </main>
     )
