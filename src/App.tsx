@@ -22,6 +22,7 @@ const App = () => {
 
    return  (
         <BrowserRouter basename='/'>
+            <h1>H1</h1>
             <Routes>
                 <Route path='/' element={<Layout routes={routes}><h1>Index</h1></Layout>} />
                 {Array.isArray(routes) && RoutesToRender}
