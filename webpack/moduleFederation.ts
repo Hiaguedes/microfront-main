@@ -6,8 +6,9 @@ const moduleFederationConfig =  new ModuleFederationPlugin(({
             name: 'mainApp',
             filename: 'remote.js',
             remotes: {
-                sidebar: 'sidebarComponent@http://localhost:3001/remote.js',
-                pages: 'pages@http://localhost:3002/remote.js',
+                sidebar: 'sidebarComponent@https://sidebar-mfe.netlify.app/remote.js',
+                pages: 'sidebarComponent@https://sidebar-mfe.netlify.app/remote.js',
+                // pages: 'pages@https://sidebar-mfe.netlify.app/remote.js',
             }
         }))
     

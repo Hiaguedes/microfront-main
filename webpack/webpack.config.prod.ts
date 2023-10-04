@@ -6,7 +6,7 @@ import 'webpack-dev-server';
 import moduleFederationConfig from "./moduleFederation";
 
 const config: Configuration = {
-    entry: "./src/index.tsx",
+    entry: "./index.tsx",
     mode: "production",
     output: {
         publicPath: 'auto',
