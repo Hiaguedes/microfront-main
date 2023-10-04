@@ -21,7 +21,6 @@ const Layout = ({children, routes}: { children: React.JSX.Element, routes: Route
             display: 'flex',
             flexDirection: 'row',
         }}>
-            <h2>H2</h2>
             <React.Suspense fallback="...carregando">
                 <RemoteSidebar
                     itens={itens}
